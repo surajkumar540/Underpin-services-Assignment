@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Navbar from "@/components/navbar/page";
+import Dashboard from "./dashboard/page";
 
 export default function Home() {
   return (
     <div >
-     Hello Next JS
+      <Navbar/>
+      {/* <Dashboard/> */}
     </div>
   );
 }
