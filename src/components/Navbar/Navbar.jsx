@@ -9,19 +9,19 @@ import pluscircle from "../../../public/assets/navbar/pluscircle.png";
 import Image from "next/image";
 const Navbar = () => {
   return (
-    <nav className=" top-0 left-0 w-full text-white px-4 z-10 absolute">
+    <nav className=" top-0 left-0 w-full text-white md:px-4 z-10 absolute">
       <div className="px-4 flex justify-center items-center w-full">
         {/* Left side images */}
-        <div className="flex space-x-[43px] md:flex-row flex-col">
-          <div>
+        <div className="flex md:space-x-[43px] md:flex-row flex-col">
+          <div className=" w-full ">
             <Image
               src={user}
               alt="user"
-              className="w-[91.43px] h-[91.43px]"
+              className=" w-[66.43px] md:w-[91.43px]  md:h-[91.43px]"
               unoptimized
             />
           </div>
-          <div className="flex space-x-4 md:flex-row flex-col">
+          <div className="xl:flex space-x-4 md:flex-row flex-col hidden ">
             <div className="relative flex justify-center items-center">
               {/* Text Box */}
               <div
@@ -68,12 +68,12 @@ const Navbar = () => {
         </div>
 
         {/* Center Logo */}
-        <div className="flex justify-center flex-grow">
+        <div className="flex justify-center flex-grow ">
           <div>
             <Image
               src={gameTitle}
               alt="logo"
-              className="w-[515.38px] h-[180px] mr-40"
+              className=" w-[215.38px] sm:w-[400px] md:w-[450px] lg:w-[515.38px] lg:h-[180px] ml-[15px] xl:mr-40"
               unoptimized
             />
           </div>
@@ -81,7 +81,7 @@ const Navbar = () => {
 
         {/* Right side images */}
         <div className="flex space-x-8 md:flex-row flex-col">
-          <div className="relative">
+          <div className="relative hidden lg:block ">
             <Image
               src={chipImg}
               alt="chip image"
@@ -96,12 +96,12 @@ const Navbar = () => {
             />
           </div>
 
-          <div>
-            <div className="relative">
+          <div clas>
+            <div className="relative ">
               <Image
                 src={chipImg}
                 alt="hamburger"
-                className="w-[64.52px] h-[64.52px]"
+                className="  md:w-[64.52px]  md:h-[64.52px]"
                 unoptimized
               />
               <Image
