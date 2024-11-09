@@ -9,7 +9,7 @@ import pluscircle from "../../../public/assets/navbar/pluscircle.png";
 import Image from "next/image";
 const Navbar = () => {
   return (
-    <nav className=" top-0 left-0 w-full text-white px-4 z-10 relative">
+    <nav className=" top-0 left-0 w-full text-white px-4 z-10 absolute">
       <div className="px-4 flex justify-center items-center w-full">
         {/* Left side images */}
         <div className="flex space-x-[43px] md:flex-row flex-col">
