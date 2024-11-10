@@ -25,7 +25,7 @@ const Dashboard = () => {
         <div className="flex flex-1">
           {/* Sidebar */}
           <Sidebar />
-          {/* <GameSlider /> */}
+          <GameSlider />
         </div>
       </div>
     </div>

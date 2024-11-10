@@ -39,21 +39,21 @@ const GameSlider = () => {
   };
 
   return (
-    <div className="z-50 pl-[280px] mt-[160px]">
-      <div className="absolute top-[200px]">
+    <div className="z-50 pl-[140px] md:pl-[200px] mt-[135px]">
+      <div className="absolute top-[176px]">
         {/* sliderBackground image */}
         <Image
           src={sliderBackground}
           alt={`Slider image bac}`}
           priority
-          className=" h-[745px] md:h-[735px] w-[346px]"
+          className=" h-[565px] md:h-[665px] w-[267px] sm:w-[268px]"
           unoptimized
         />
       </div>
-      <div className=" w-full sm:w-[80%] md:w-[60%] lg:w-[40%] xl:w-[30%] 2xl:w-[30%] custom-scrollbar-hide mt-[63px] md:mt-[58px]  pl-[23px] border-none">
+      <div className=" w-[250px]  custom-scrollbar-hide mt-[63px] md:mt-[61px] pl-[18px] border-none ">
         <div
           ref={sliderRef}
-          className="relative flex overflow-x-auto p-0 w-[300px] scrollbar-hide scroll-smooth border-none"
+          className="relative flex overflow-x-auto p-0  scrollbar-hide scroll-smooth border-none "
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}
@@ -67,7 +67,7 @@ const GameSlider = () => {
               src={tab.img}
               alt={`Slider image ${index + 1}`}
               priority
-              className=" object-cover md:object-contain p-0 w-[450px] h-[700px] sm:w-[280px] md:w-[300px] lg:w-[400px] border-none"
+              className="object-left-bottom w-[330x] md:h-[625px] h-[524.5px] border-none"
               unoptimized
             />
           ))}
