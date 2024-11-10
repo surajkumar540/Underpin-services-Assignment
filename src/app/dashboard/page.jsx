@@ -1,21 +1,33 @@
+import Image from "next/image";
 import React from "react";
 import dashboard from "../../../public/assets/navbar/dashboard.png";
-import Image from "next/image";
+import Sidebar from "@/components/Sidebar/Sidebar";
+import Navbar from "@/components/Navbar/Navbar";
+import GameSlider from "@/components/GameSlider/GameSlider";
 
 const Dashboard = () => {
   return (
-    <div className="relative h-screen">
+    <div className="relative w-full h-screen">
       {/* Full screen background image */}
       <Image
-        src={dashboard} // Replace with your image path
+        src={dashboard}
         alt="Background Image"
-        layout="fill"
-        objectFit="cover" // Ensures the image covers the entire div
-        objectPosition="center" // Centers the image within the div
-        priority // Optional: ensures the image is prioritized in loading
+        layout="fill" // Ensure the image covers the entire screen
+        objectFit="cover" // Maintains the aspect ratio and covers the screen
+        className="absolute top-0 left-0 z-0 "
       />
+      {/* Overlay content (navbar, sidebar, etc.) */}
+      <div className="relative z-10 flex flex-col h-full">
+        {/* Navbar */}
+        <Navbar />
 
-     
+        {/* Main content area */}
+        <div className="flex flex-1">
+          {/* Sidebar */}
+          <Sidebar />
+          <GameSlider />
+        </div>
+      </div>
     </div>
   );
 };
