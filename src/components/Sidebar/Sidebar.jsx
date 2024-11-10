@@ -6,12 +6,12 @@ import SidebarCard from "./SidebarCard";
 
 const Sidebar = () => {
   return (
-    <div className="absolute top-36 w-full px-4 z-10">
+    <div className="absolute top-[190px] w-full px-4 z-10">
       {/* Background Sidebar Image */}
       <Image
         src={sidebarContainer}
         alt="Sidebar Container"
-        className="w-[160px] md:w-[200px] object-cover relative"
+        className="h-[550px] md:h-[650px] w-[110px] md:w-[140px]"
         priority
       />
 
