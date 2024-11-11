@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
 import gamecard from "../../../public/assets/slider/game.png";
-import Image from "next/image";
 import GameCard from "./GameCard";
 
 const GameBar = () => {

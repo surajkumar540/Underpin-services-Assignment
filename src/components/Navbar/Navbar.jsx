@@ -1,7 +1,7 @@
 import React from "react";
 import user from "../../../public/assets/navbar/user.png";
-import chipImg from "../../../public/assets/navbar/chip.png";
-import gameTitle from "../../../public/assets/navbar/gametitle.png";
+import chipimg from "../../../public/assets/navbar/chip.png";
+import gametitle from "../../../public/assets/navbar/gametitle.png";
 import arrowsIn from "../../../public/assets/navbar/arrowsin.png";
 import hamburger from "../../../public/assets/navbar/hamburger.png";
 import coin from "../../../public/assets/navbar/coin.png";
@@ -71,7 +71,7 @@ const Navbar = () => {
         <div className="flex justify-center flex-grow ">
           <div>
             <Image
-              src={gameTitle}
+              src={gametitle}
               alt="logo"
               className=" w-[215.38px] sm:w-[400px] md:w-[450px] lg:w-[515.38px] lg:h-[180px] ml-[15px] xl:mr-40"
               unoptimized
@@ -83,7 +83,7 @@ const Navbar = () => {
         <div className="flex space-x-8 md:flex-row flex-col">
           <div className="relative hidden lg:block ">
             <Image
-              src={chipImg}
+              src={chipimg}
               alt="chip image"
               className="w-[64.52px] h-[64.52px]"
               unoptimized

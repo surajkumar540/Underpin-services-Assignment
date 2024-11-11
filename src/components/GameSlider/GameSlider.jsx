@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
-import sliderBackground from "../../../public/assets/slider/sliderbackground.png";
+import sliderbackground from "../../../public/assets/slider/sliderbackground.png";
 import slider1 from "../../../public/assets/slider/slider1.png";
 import slider2 from "../../../public/assets/slider/slider2.png";
 import slider3 from "../../../public/assets/slider/slider3.png";
@@ -43,7 +43,7 @@ const GameSlider = () => {
       <div className="absolute top-[176px]">
         {/* sliderBackground image */}
         <Image
-          src={sliderBackground}
+          src={sliderbackground}
           alt={`Slider image bac}`}
           priority
           className=" h-[565px] md:h-[665px] w-[267px] sm:w-[268px]"
