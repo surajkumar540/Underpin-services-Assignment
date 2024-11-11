@@ -99,7 +99,7 @@ const Navbar = () => {
           <div clas>
             <div className="relative ">
               <Image
-                src={chipImg}
+                src={chipimg}
                 alt="hamburger"
                 className="  md:w-[64.52px]  md:h-[64.52px]"
                 unoptimized
