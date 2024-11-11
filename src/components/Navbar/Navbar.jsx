@@ -2,7 +2,7 @@ import React from "react";
 import user from "../../../public/assets/navbar/user.png";
 import chipImg from "../../../public/assets/navbar/chip.png";
 import gameTitle from "../../../public/assets/navbar/gametitle.png";
-import arrowsIn from "../../../public/assets/navbar/arrowsIn.png";
+import arrowsIn from "../../../public/assets/navbar/arrowsin.png";
 import hamburger from "../../../public/assets/navbar/hamburger.png";
 import coin from "../../../public/assets/navbar/coin.png";
 import pluscircle from "../../../public/assets/navbar/pluscircle.png";
