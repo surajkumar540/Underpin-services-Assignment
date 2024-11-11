@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 import gamecard from "../../../public/assets/slider/game.png";
 import Image from "next/image";
+import GameCard from "./GameCard";
 
 const GameBar = () => {
   const [isDragging, setIsDragging] = useState(false);
@@ -47,8 +48,8 @@ const GameBar = () => {
   };
 
   return (
-    <div className="z-50 md:pl-[50px] mt-[135px] hidden lg:block">
-      <div className="w-full custom-scrollbar-hide mt-[63px] md:mt-[61px] pl-[18px] border-none">
+    <div className="z-50 absolute md:relative left-40 lg:left-0 lg:pl-[50px] mt-[170px] md:mt-[135px] ">
+      <div className="w-full custom-scrollbar-hide mt-[63px] md:mt-[61px] md:pl-[18px] border-none">
         <div
           ref={sliderRef}
           className="relative flex flex-col space-y-10 overflow-x-auto p-0 scrollbar-hide scroll-smooth border-none"
@@ -59,18 +60,7 @@ const GameBar = () => {
           style={{ cursor: isDragging ? "grabbing" : "grab" }}
         >
           {rows.map((row, rowIndex) => (
-            <div key={rowIndex} className="flex space-x-10">
-              {row.map((tab, index) => (
-                <Image
-                  key={index}
-                  src={tab.img}
-                  alt={`Game card image ${index + 1}`}
-                  priority
-                  className="objec w-[433.09px] h-[300px] z-50"
-                  unoptimized
-                />
-              ))}
-            </div>
+            <GameCard row={row} key={rowIndex}  />
           ))}
         </div>
       </div>

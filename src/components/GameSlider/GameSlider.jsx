@@ -39,7 +39,7 @@ const GameSlider = () => {
   };
 
   return (
-    <div className="z-50 pl-[140px] md:pl-[200px] mt-[135px]">
+    <div className="z-50 pl-[140px] md:pl-[200px] mt-[135px] hidden lg:block">
       <div className="absolute top-[176px]">
         {/* sliderBackground image */}
         <Image
