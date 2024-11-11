@@ -4,6 +4,7 @@ import dashboard from "../../../public/assets/navbar/dashboard.png";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Navbar from "@/components/Navbar/Navbar";
 import GameSlider from "@/components/GameSlider/GameSlider";
+import GameBar from "@/components/GameCards/GameBar";
 
 const Dashboard = () => {
   return (
@@ -25,7 +26,10 @@ const Dashboard = () => {
         <div className="flex flex-1">
           {/* Sidebar */}
           <Sidebar />
+
+          {/* game slider */}
           <GameSlider />
+          <GameBar />
         </div>
       </div>
     </div>
