@@ -3,7 +3,7 @@ import React from "react";
 
 const GameCard = ({ row }) => {
   return (
-    <div className="flex space-x-10">
+    <div className="flex space-x-10 ">
       {row.map((tab, index) => (
         <Image
           key={index}

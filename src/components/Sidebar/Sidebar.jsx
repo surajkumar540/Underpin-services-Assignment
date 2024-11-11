@@ -6,7 +6,7 @@ import SidebarCard from "./SidebarCard";
 
 const Sidebar = () => {
   return (
-    <div className="absolute top-[190px] w-full px-4 z-10">
+    <div className="absolute top-[80px] md:top-[190px] w-full px-4 z-10">
       {/* Background Sidebar Image */}
       <Image
         src={sidebarContainer}

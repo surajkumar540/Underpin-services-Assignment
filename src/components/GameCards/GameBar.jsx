@@ -47,11 +47,11 @@ const GameBar = () => {
   };
 
   return (
-    <div className="z-50 absolute md:relative left-40 lg:left-0 lg:pl-[50px] mt-[170px] md:mt-[135px] ">
-      <div className="w-full custom-scrollbar-hide mt-[63px] md:mt-[61px] md:pl-[18px] border-none">
+    <div className="z-50  hidden md:block lg:pl-[50px] mt-[60px] md:mt-[135px]  ">
+      <div className="w-full custom-scrollbar-hide mt-[63px] md:mt-[61px]  md:pl-[18px] border-none ">
         <div
           ref={sliderRef}
-          className="relative flex flex-col space-y-10 overflow-x-auto p-0 scrollbar-hide scroll-smooth border-none"
+          className="relative flex flex-col space-y-10 overflow-x-auto  scrollbar-hide scroll-smooth border-none "
           onMouseDown={handleMouseDown}
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}
@@ -59,7 +59,7 @@ const GameBar = () => {
           style={{ cursor: isDragging ? "grabbing" : "grab" }}
         >
           {rows.map((row, rowIndex) => (
-            <GameCard row={row} key={rowIndex}  />
+            <GameCard row={row} key={rowIndex} />
           ))}
         </div>
       </div>

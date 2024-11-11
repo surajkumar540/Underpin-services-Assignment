@@ -39,14 +39,14 @@ const GameSlider = () => {
   };
 
   return (
-    <div className="z-50 pl-[140px] md:pl-[200px] mt-[135px] hidden lg:block">
-      <div className="absolute top-[176px]">
+    <div className="z-50 pl-[140px] md:pl-[200px] mt-[35px] md:mt-[135px]">
+      <div className="absolute top-[84px] md:top-[176px]">
         {/* sliderBackground image */}
         <Image
           src={sliderbackground}
           alt={`Slider image bac}`}
           priority
-          className=" h-[565px] md:h-[665px] w-[267px] sm:w-[268px]"
+          className=" h-[558px] md:h-[665px] w-[267px] sm:w-[268px]"
           unoptimized
         />
       </div>
